@@ -31,11 +31,9 @@ class Main extends PluginBase implements Listener{
                                    $sender->setAllowFlight(true);
                                 break;
                                 }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+                           }
+                       }
+                   }
+               }
+           }
+       }

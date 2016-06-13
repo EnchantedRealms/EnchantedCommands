@@ -1,0 +1,14 @@
+name: EnchantedFly
+version: 1.0.0
+api: [2.0.0]
+main: EnchantedRealms\Main
+author: GlacierShard92
+commands:
+  fly:
+     description: Allows you to fly!
+     usage: /fly
+     permission: enchantedfly.cmd.fly
+permissions:
+ enchantedfly.cmd.fly:
+     default: OP
+     description: Allows you to fly!

@@ -1,7 +1,7 @@
 name: EnchantedFly
 version: 1.0.0
 api: [2.0.0]
-main: EnchantedRealms\Main
+main: EnchantedFly\Main
 author: GlacierShard92
 commands:
   fly:

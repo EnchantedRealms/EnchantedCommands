@@ -13,7 +13,7 @@ class Main extends PluginBase implements Listener{
 
     public function onEnable(){
           $this->getServer()->getPluginManager()->registerEvents($this,$this);
-          $this->getLogger()->info("§l§8[§r§9E§2R§9P§2E§8§l]§r§b EnchantedFly§a ENABLED!");
+          $this->getLogger()->info("EnchantedFly ENABLED!");
           }
     public function onCommand(CommandSender $sender, Command $command, $label, array $args){
          switch($command->getName()){
@@ -24,11 +24,11 @@ class Main extends PluginBase implements Listener{
                          if(!isset($args[0])){
                               if($sender->hasPermission("enchantedfly.cmd.fly")){
                                  if($sender->getAllowFlight()){
+                                   $sender->sendMessage("§e§l[§r§e!§l]§r§a Enabled!");
+                                   $sender->setAllowFlight(true);
+                                }else{
                                    $sender->sendMessage("§e§l[§r§e!§l]§r§c Flying Disabled!");
                                    $sender->setAllowFlight(false);
-                                }else{
-                                   $sender->sendMessage("§e§l[§r§e!§l]§r§a Flying Enabled!");
-                                   $sender->setAllowFlight(true);
                                 break;
                                 }
                            }

@@ -6,7 +6,6 @@ author: GlacierShard92
 commands:
   fly:
      description: Allows you to fly!
-     usage: /fly
      permission: enchantedfly.cmd.fly
 permissions:
  enchantedfly.cmd.fly:

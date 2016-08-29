@@ -24,10 +24,10 @@ class Main extends PluginBase implements Listener{
                          if(!isset($args[0])){
                               if($sender->hasPermission("enchantedfly.cmd.fly")){
                                  if($sender->getAllowFlight()){
-                                   $sender->sendMessage("§e§l[§r§e!§l]§r§c Flying Disabled!");
+                                   $sender->sendMessage("§e§lFLY§r§8 »§c Flying Disabled!");
                                    $sender->setAllowFlight(false);
                                 }else{
-                                   $sender->sendMessage("§e§l[§r§e!§l]§r§a Flying Enabled!");
+                                   $sender->sendMessage("§e§lFLY§r§8 »§a Flying Enabled!");
                                    $sender->setAllowFlight(true);
                                 break;
                                 }
